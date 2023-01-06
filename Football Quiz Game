@@ -1,0 +1,39 @@
+print("Welcome to my football quiz")
+
+playing = input("Do you want to play? ")
+
+if playing.lower() != "yes":
+    quit()
+print("Okay! Let's play.")
+score = 0
+
+answer = input("Who was Manchester United's most successful coach? ")
+if answer.lower() == "sir alex ferguson":
+    print ("correct!")
+    score += 3
+else:
+    print ("Sorry that is incorrect")
+
+answer = input("How many Champions League titles have Real Madrid won? ")
+if answer == "14":
+    print("Correct!")
+    score += 3
+else:
+    print("Sorry that is incorrect")
+
+answer = input("Who does Raphel Leao play for? ")
+if answer.lower() == "ac milan":
+    print("Correct!")
+    score += 3
+else:
+    print("Sorry that is incorrect.")
+
+answer = input("What team did Jose Mourinho coach in 2005? ")
+if answer.lower() == "chelsea":
+    print("Correct!")
+    score += 3
+else:
+    print("Sorry that is incorrect.")
+
+print ("You got " + str(score) + " questions correct ")
+print ("You got a " + str((score/12) * 100) + "%.")
